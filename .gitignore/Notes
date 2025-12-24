@@ -1,0 +1,71 @@
+Responsive Websites -
+•Landscape Screen  - width greater than height(laptop).
+•Portrait Screen - height greater than width(Mobile).
+
+Units & ViewPorts
+
+Absolute units
+1.Pixels : (DPR) Fixed Size
+
+Relative
+1.Percentage: Take size according to their parent
+2.em: Relative to the font size of the parent
+3.rem: Rlative to the root element font size
+
+ViewPort Units
+vw: According ViewPort width
+vh: According ViewPort height
+vmin,vmax:ViewPort Maximum(If ViewPort height is max and ViewPort width)
+
+Modern Units
+ch: width of the "0" chararcter in the current font. Useful for input fields
+lh:Relative to the line height of the elmemnt
+
+------------------------LAYOUTS-----------------
+1.FlexBox
+•Bydefault flex-direction  - row, cross axis - y-axis and main axis - x-axis
+•alignItems - works in cross-axis
+•Justify Content - works in main-axis
+•flex-Direction - coloum then(main-axis - y-axis and cross axis - x-axis)
+©flex-wrap - wrap (wrap up - containg element without shrinking child element)
+•flex-shrink - 0 (its for child)
+•give gap - to the parent 
+
+2.Grid Layout
+•give display grid to the parent
+•grid-template-columns: columns width (can be two or four) , (1fr,1fr,1fr,1fr)
+•grid-teplate-rows: same as columns
+align-self and justify-self
+
+if you are working with small element work with - flexbox
+and if you are working with like dashboard - work with grid
+
+----------------media queris-----------------------
+@media(condition at which you want to do) and (2nd condition if there is){
+nav{
+  display:none
+  display:block
+}
+}
+-------------------------------------------
+Important points that can work 
+-------------------------------------------
+to make nav stick on top give position fixed and width 100%
+
+.btn1,
+.btn2{
+    border: 2px solid var(--green-main);
+    color: var(--green-main);
+}
+
+.btn1:hover{
+    background-color: var(--green-main);
+   color: #000;  
+}
+.btn2:hover{
+   background-color: var(--green-main);
+   color: #000;  
+}
+ transform:translateY(-8px)
+
+ background clip and background size
